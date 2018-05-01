@@ -1,0 +1,57 @@
+/* Spinner one */
+.spinner-1:before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	border-radius: 50%;
+	/* border: 3px solid lightgray; */
+	border-top: 2px solid royalblue;
+	border-bottom: 2px solid yellowgreen;
+	border-right: 2px solid transparent;
+	border-left: 2px solid transparent;
+	animation: spinner 0.7s linear infinite;
+}
+/* Spinner two */
+.spinner-2:before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	border-top-color: royalblue;
+	animation: spinner 0.7s ease infinite;
+}
+/* Spinner three */
+.spinner-3:before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	border-radius: 50%;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid transparent;
+	animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}

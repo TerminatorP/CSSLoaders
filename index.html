@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./main.css">
+	<title>CSS Loading Spinners!!!</title>
+</head>
+
+<body>
+	<div class="main">
+		<h1>Example CSS loading spinners made purely on CSS</h1>
+		<p>Whoo that took what? 5 seconds!!</p>
+	</div>
+
+	<script>
+		document.querySelector(".main p").style.display = "none";
+		document.querySelector(".main").classList.add("spinner-1");
+
+		// Fake a request
+		setTimeout(() => {
+			document.querySelector(".main").classList.remove("spinner-1");
+			document.querySelector(".main p").style.display = "block";
+		}, 5000);
+	</script>
+</body>
+
+</html>
